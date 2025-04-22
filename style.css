@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    flex-direction: column;
+
+}
+header{
+    width: 100%;  
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 8px;
+}
+nav, nav a{    
+    /* background:rgb(37, 37, 37); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav img{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    margin-right: 8px;
+}
+
+.heading{
+    margin-bottom: 50px;
+    padding: 20px;
+}
+h1{
+    color: orange;
+    font-size: 50px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+span{
+    color: white;
+    font-size:15px;
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(37, 37, 37);
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px solid orange;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+
+.options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.options:first-child{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.options label {
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.options input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+    
+}
+.options input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 10px;
+}
+.output {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.output input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}
+
+.output button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.output button:hover {
+    background-color: rgb(255, 174, 0);
+}
+
+button#generateBtn {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    transition: 0.2s;
+}
+
+button#generateBtn:hover {
+    background-color: orange;
+    scale: 1.02;
+}
+
+@media only screen and (max-width: 400px){
+    img{
+        display: none;
+    }
+    nav a{
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+    span{
+        font-size: 12px;
+        display: none;
+    }
+    .heading{
+        margin-bottom: 0px;
+    }
+    .output{
+        flex-direction: column;
+    }
+    .output input[type="text"], .output button{
+        border-radius: 4px;
+    }
+} 
