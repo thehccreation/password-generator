@@ -98,6 +98,7 @@ span{
 .options input[type="checkbox"]{
     width: 20px;
     height: 20px;
+accent-color: orange;
 }
 
 .boxes{
